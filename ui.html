@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet'>
+    <title>Merry Christmas
+    </title>
+
+    <style>
+      .body-bg {
+        background: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/p-421-kut-0274-kut-a_3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=84cf5ba6db674459db02adf2291cdc29') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      }
+
+      p.main {
+        font-family: 'Calligraffitti', cursive;
+        font-size: 20px;
+        color: #8B4513;
+      }
+
+      .centered {
+        margin: auto;
+        max-width: 500px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .container {
+        position: relative;
+        text-align: center;
+        color:hsla(122, 82%, 15%, 0.633);
+      }
+      p.gift {
+        font-family: 'Mountains of Christmas', cursive;
+        font-size: 20px;
+        color: #8B4513;
+      }
+    </style>
+  </head>
+
+  <body class="body-bg" >
+    <div class="container">   
+      <div class="centered">
+        <h3 style="color:hsla(122, 82%, 15%, 0.633);font-weight: bold;font-family: 'Calligraffitti', cursive;font-size: 25px;"><i>Secret Santa!!</i></h3>
+        <p class="main">
+        Dear
+        <?=row[1] ?>, <br> </p>
+        <p class="main" style="color:hsl(0, 50%, 49%);"><i>Wishing you a very happy holly jolly Christmas. What could be greater than bringing smile to
+                someone's face during this festive season. As you had signed up for secret Santa, We are sending details of whom
+                is chosen as your special someone to give a gift to.</i></p><br>
+        <h3 style="background-color:hsla(112, 7%, 57%, 0.603); font-family: 'Mountains of Christmas', cursive;font-size: 30px;color: #8B4513;">
+            <br>
+            You are Secret Santa to : <strong style="color:hsl(0, 50%, 49%);">
+                <?= data[index][1] ?>
+            </strong><br>
+            <i style="font-family: 'Mountains of Christmas';color:SlateBlue;font-size: 25px;">shhhh!</i><br><br>
+        </h3>
+       
+        <h2 style="font-family: 'Calligraffitti', cursive;">Here are their details : </h4><br>
+        <h3 style="font-family: 'Calligraffitti', cursive;">
+            <b>Address for Shipment:</b>
+            <?= data[index][2] ?><br><br>
+            <b>Wishlist of
+                <?= data[index][1] ?>:
+            </b>
+            <?= data[index][3]?><br><br><br><br>
+        </h3>
+           
+        <p class="gift">
+        <b>Rules :  </b><br>
+        Goto url mentioned. If it's a list choose the item. You can order from any other website also. <br>
+        1) Click on it's a gift (this will give you santee the option of exchanging the order directly in case it comes as defected or in wrong size) <br>
+        2) Click on add to cart. <br></p>
+        <h2>3) Please do not mention your name. You can select any random fun phrase. Maybe leave a hint for who you are.</h2><br>
+        <p class="gift">
+        4) Order like you usually do: Enter the adress details, select the payment method. Click Pay and complete the formalities.<br>
+        5) Sit back and enjoy people guess who sent what.
+
+        <br><br>Best Wishes <br>BSF team
+        </p>
+      </div>
+    </div>
+  </body>
+</html> 
